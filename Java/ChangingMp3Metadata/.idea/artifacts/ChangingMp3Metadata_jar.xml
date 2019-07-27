@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ChangingMp3Metadata:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ChangingMp3Metadata_jar</output-path>
+    <root id="archive" name="ChangingMp3Metadata.jar">
+      <element id="module-output" name="ChangingMp3Metadata" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/tika-app-1.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/jid3_0.46/dist/JID3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
