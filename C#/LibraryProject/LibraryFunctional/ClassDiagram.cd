@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibraryFunctional.Book" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAQEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.19" Collapsed="true" />
+  </Class>
+  <Class Name="LibraryFunctional.BookRepository" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAICAAAAAAEAAAAAAQAAAAMEAAEAAAAAAAAACAAA=</HashCode>
+      <FileName>BookRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.167" />
+  </Class>
+  <Class Name="LibraryFunctional.DatabaseQueryMaker" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseQueryMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryFunctional.Library" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAgAAgAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Library.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BookRepository" />
+      <Property Name="ReaderRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibraryFunctional.Reader" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAgAAEACAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryFunctional.ReaderRepository" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAIAAAAAAAEAAAAAAQAAAAMEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReaderRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="LibraryFunctional.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAEAAAAAAAAAAAEEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
