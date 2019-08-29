@@ -61,6 +61,12 @@
     <Compile Include="ExceptionWindow.xaml.cs">
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SelectBook.xaml.cs">
+      <DependentUpon>SelectBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectReader.xaml.cs">
+      <DependentUpon>SelectReader.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TakeBookWindow.xaml.cs">
       <DependentUpon>TakeBookWindow.xaml</DependentUpon>
     </Compile>
@@ -105,6 +111,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SelectBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TakeBookWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

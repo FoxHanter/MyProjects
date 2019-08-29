@@ -6,29 +6,29 @@ namespace LibraryFunctional
     {
         public string Name { get; private set; }
         public int ID { get; set; }
-        public List<Book> Books { get; private set; }
+        public List<BookToReader> Books { get; private set; }
 
         public Reader() { }
 
         public Reader(string name)
         {
             Name = name;
-            Books = new List<Book>();
+            Books = new List<BookToReader>();
         }
 
         public Reader(int id,string name)
         {
             ID = id;
             Name = name;
-            Books = new List<Book>();
+            Books = new List<BookToReader>();
         }
 
-        public void AddBook(Book book)
+        public void AddBook(BookToReader book)
         {
             Books.Add(book);
         }
 
-        public void DeleteBook(Book book)
+        public void DeleteBook(BookToReader book)
         {
             Books.Remove(book);
         }

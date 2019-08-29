@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="BookRepository.cs" />
+    <Compile Include="BookToReader.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

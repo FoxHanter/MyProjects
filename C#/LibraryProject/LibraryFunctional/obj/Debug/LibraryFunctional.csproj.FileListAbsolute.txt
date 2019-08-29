@@ -22,3 +22,15 @@ C:\Users\Kostya\Desktop\LibraryProject\LibraryFunctional\obj\Debug\LibraryFuncti
 C:\Users\Kostya\Desktop\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csprojAssemblyReference.cache
 C:\Users\Kostya\Desktop\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csproj.CoreCompileInputs.cache
 C:\Users\Kostya\Desktop\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csproj.CopyComplete
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\LibraryFunctional.dll.config
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\LibraryFunctional.dll
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\LibraryFunctional.pdb
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\EntityFramework.dll
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\EntityFramework.xml
+D:\Git\C#\LibraryProject\LibraryFunctional\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\C#\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csprojAssemblyReference.cache
+D:\Git\C#\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csproj.CoreCompileInputs.cache
+D:\Git\C#\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.csproj.CopyComplete
+D:\Git\C#\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.dll
+D:\Git\C#\LibraryProject\LibraryFunctional\obj\Debug\LibraryFunctional.pdb
