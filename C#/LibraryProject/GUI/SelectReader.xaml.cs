@@ -65,7 +65,8 @@ namespace GUI
 
             if (reader!=null)
             {
-                (this.Owner as GiveBookWindow).ChooseReaderTextBox.Text = reader.ToString();
+                if (Owner is TakeBookWindow) (Owner as TakeBookWindow).ChooseReaderTextBox.Text = reader.ToString();
+                if (Owner is GiveBookWindow) (Owner as GiveBookWindow).ChooseReaderTextBox.Text = reader.ToString();
                 (this.Owner.Owner as MainWindow).CallAcceptWindow($"Выбран читатель\n{reader.ToString()}");
                 this.Close();
             }
@@ -75,5 +76,6 @@ namespace GUI
                 return;
             }
         }
+
     }
 }

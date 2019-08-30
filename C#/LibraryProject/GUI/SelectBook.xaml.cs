@@ -21,18 +21,28 @@ namespace GUI
     public partial class SelectBook : Window
     {
         BookRepository _repository;
+        int _id;
 
-        public SelectBook(BookRepository repository)
+        public SelectBook(BookRepository repository,int id=0)
         {
             InitializeComponent();
             _repository = repository;
-            TextBoxShowAllItems();
+            _id = id;
+            TextBoxShowAllItems();            
         }
 
         private void ChooseReaderListBox_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
             var item = ItemsControl.ContainerFromElement(ChooseReaderListBox, e.OriginalSource as DependencyObject) as ListBoxItem;
             tb.Text = item.DataContext.ToString();
+        }
+
+        private IEnumerable<Book> GetAllItems()
+        {
+            if (_id==0)
+                return _repository.GetAllItems();
+            else
+                return _repository.GetAllItems(_id);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -55,7 +65,8 @@ namespace GUI
         private void TextBoxShowAllItems()
         {
             ChooseReaderListBox.Items.Clear();
-            foreach (var item in _repository.GetAllItems())
+
+            foreach (var item in GetAllItems())
                 ChooseReaderListBox.Items.Add(item);
         }
 
@@ -65,13 +76,14 @@ namespace GUI
 
             if (book != null)
             {
-                (this.Owner as GiveBookWindow).ChooseBookTextBox.Text = book.ToString();
-                (this.Owner.Owner as MainWindow).CallAcceptWindow($"Выбрана книга\n{book.ToString()}");
-                this.Close();
+                if (Owner is TakeBookWindow) (Owner as TakeBookWindow).ChooseBookTextBox.Text = book.ToString();
+                if (Owner is GiveBookWindow) (Owner as GiveBookWindow).ChooseBookTextBox.Text = book.ToString();
+                (Owner.Owner as MainWindow).CallAcceptWindow($"Выбрана книга\n{book.ToString()}");
+                Close();
             }
             else
             {
-                (this.Owner.Owner as MainWindow).CallExceptionWindow("Такой книги не существует");
+                (Owner.Owner as MainWindow).CallExceptionWindow("Такой книги не существует");
                 return;
             }
         }

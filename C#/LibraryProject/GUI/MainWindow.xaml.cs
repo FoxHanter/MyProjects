@@ -54,9 +54,11 @@ namespace GUI
 
         private void TakeBookButton_Click(object sender, RoutedEventArgs e)
         {
-            /*
-             * Эта функция не реализована, так как не знаю как в БД добавить у читателя поле List<Book>
-             */
+           var takeBookWindow = new TakeBookWindow(_library);
+            takeBookWindow.Owner = this;
+
+            if (takeBookWindow.ShowDialog() == true)
+                takeBookWindow.Show();
         }
 
         public void CallExceptionWindow(string message)

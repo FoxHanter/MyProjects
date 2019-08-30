@@ -46,9 +46,24 @@ namespace LibraryFunctional
             _books = new List<Book>();
 
             foreach (var item in items)
-                _books.Add(new Book(int.Parse(item[0].ToString()),item[1].ToString(), int.Parse(item[2].ToString())));
+                _books.Add(new Book(int.Parse(item[0].ToString()), item[1].ToString(), int.Parse(item[2].ToString())));
 
             return _books;
+        }
+
+        public IEnumerable<Book> GetAllItems(int id)
+        {
+            GetAllItems();
+            var items = DataQuery($"SELECT b_id FROM BooksToReaders WHERE r_id={id}", myConnection);
+            var _booksTo = new List<Book>();
+
+            foreach (var item in items)
+            {
+                int v = int.Parse(item[0].ToString());
+                _booksTo.Add(_books.Find(x => x.ID == v));
+            }
+
+            return _booksTo;
         }
 
         public Book GetItem(int id)
