@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="Библиотека" Height="450" Width="800" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid>
-        <Button Name="NewReaderButton" Content="Зарегистрировать читателя" HorizontalAlignment="Left" Height="50" Margin="300,60,0,0" VerticalAlignment="Top" Width="224" Click="NewReaderButton_Click"/>
-        <Button Name="NewBookButton" Content="Добавить книгу" HorizontalAlignment="Left" Height="50" Margin="300,120,0,0" VerticalAlignment="Top" Width="224" Click="NewBookButton_Click"/>
-        <Button Name="GiveBookButton" Content="Выдать книгу" HorizontalAlignment="Left" Height="50" Margin="300,180,0,0" VerticalAlignment="Top" Width="224" Click="GiveBookButton_Click"/>
-        <Button Name="TakeBookButton" Content="Вернуть книгу" HorizontalAlignment="Left" Height="50" Margin="300,240,0,0" VerticalAlignment="Top" Width="224" Click="TakeBookButton_Click"/>
-
+        <Button Name="ReaderCatalogButton" Content="Каталог читателей" HorizontalAlignment="Left" Height="50" Margin="300,60,0,0" VerticalAlignment="Top" Width="224" Click="ReaderCatalogButton_Click" FontSize="16"/>
+        <Button Name="BookCatalogButton" Content="Каталог книг" HorizontalAlignment="Left" Height="50" Margin="300,120,0,0" VerticalAlignment="Top" Width="224" Click="BookCatalogButton_Click" FontSize="16"/>
+        <Button Name="GiveBookButton" Content="Выдать книгу" HorizontalAlignment="Left" Height="50" Margin="300,180,0,0" VerticalAlignment="Top" Width="224" Click="GiveBookButton_Click" FontSize="16"/>
+        <Button Name="TakeBookButton" Content="Вернуть книгу" HorizontalAlignment="Left" Height="50" Margin="300,240,0,0" VerticalAlignment="Top" Width="224" Click="TakeBookButton_Click" FontSize="16"/>
     </Grid>
 </Window>

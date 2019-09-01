@@ -1,0 +1,19 @@
+﻿<Window x:Class="GUI.InfoAboutReaderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Подробная информация о читателе" Height="450" Width="800">
+    <Grid>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="NameLabel" Content="" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="IDLabel" Content="" HorizontalAlignment="Left" Margin="50,40,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Книги которые взял читатель:" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ScrollViewer Margin="10,120,10,22" >
+            <ListBox Name="BooksListBox" FontSize="16" Width="769"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

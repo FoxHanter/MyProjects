@@ -13,8 +13,8 @@
         <TextBox Name="ChooseBookTextBox" Height="31" Margin="188,66,206,0" TextWrapping="Wrap" IsReadOnly="True" Text="книга не выбрана" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Выберите Книгу" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" FontSize="16"/>
 
-        <Button Name="AcceptButton" Content="Вернуть книгу" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click"/>
-        <Button Name="SelectReaderButton" Content="Выбрать" HorizontalAlignment="Left" Height="31" Margin="629,26,0,0" VerticalAlignment="Top" Width="129" Click="SelectReaderButton_Click"/>
-        <Button x:Name="SelectBookButton" Content="Выбрать" HorizontalAlignment="Left" Height="31" Margin="629,67,0,0" VerticalAlignment="Top" Width="129" Click="SelectBookButton_Click"/>
+        <Button Name="AcceptButton" Content="Вернуть книгу" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click" FontSize="16"/>
+        <Button Name="SelectReaderButton" Content="Выбрать" HorizontalAlignment="Left" Height="31" Margin="629,26,0,0" VerticalAlignment="Top" Width="129" Click="SelectReaderButton_Click"  FontSize="16"/>
+        <Button x:Name="SelectBookButton" Content="Выбрать" HorizontalAlignment="Left" Height="31" Margin="629,67,0,0" VerticalAlignment="Top" Width="129" Click="SelectBookButton_Click"  FontSize="16"/>
     </Grid>
 </Window>

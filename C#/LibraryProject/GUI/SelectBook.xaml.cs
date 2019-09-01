@@ -1,17 +1,9 @@
 ﻿using LibraryFunctional;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GUI
 {
@@ -20,8 +12,8 @@ namespace GUI
     /// </summary>
     public partial class SelectBook : Window
     {
-        BookRepository _repository;
-        int _id;
+        private BookRepository _repository;
+        private int _id;
 
         public SelectBook(BookRepository repository,int id=0)
         {
@@ -78,6 +70,7 @@ namespace GUI
             {
                 if (Owner is TakeBookWindow) (Owner as TakeBookWindow).ChooseBookTextBox.Text = book.ToString();
                 if (Owner is GiveBookWindow) (Owner as GiveBookWindow).ChooseBookTextBox.Text = book.ToString();
+
                 (Owner.Owner as MainWindow).CallAcceptWindow($"Выбрана книга\n{book.ToString()}");
                 Close();
             }

@@ -1,18 +1,7 @@
 ﻿using LibraryFunctional;
 using System;
-using System.Collections.Generic;
-using System.Data.OleDb;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GUI
 {
@@ -21,7 +10,8 @@ namespace GUI
     /// </summary>
     public partial class TakeBookWindow : Window
     {
-        Library _library;
+        private Library _library;
+
         public TakeBookWindow(Library library)
         {
             InitializeComponent();
@@ -56,38 +46,31 @@ namespace GUI
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)
         {
-              try
-              {
-                  var book = _library.Books.GetAllItems().First(x => x.ToString().Equals(ChooseBookTextBox.Text));
-                  var reader = _library.Readers.GetAllItems().First(x => x.ToString().Equals(ChooseReaderTextBox.Text));
+            try
+            {
+                var book = _library.Books.GetAllItems().First(x => x.ToString().Equals(ChooseBookTextBox.Text));
+                var reader = _library.Readers.GetAllItems().First(x => x.ToString().Equals(ChooseReaderTextBox.Text));
 
                 if (book != null && reader != null)
                 {
                     _library.Books.Update(book, 1);
-                    var book1 = new BookToReader();
-                    book1.BookId = book.ID;
-                    book1.ReaderId = reader.ID;
-                    DatabaseQueryMaker maker = new DatabaseQueryMaker();
-                    var con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LibraryDataBase.mdb;");
-                    con.Open();
-                    maker.VoidQuery($"DELETE FROM BooksToReaders WHERE r_id = {reader.ID} and b_id={book.ID}", con);
+                    _library.TakenBooks.Delete(reader.ID, book.ID);
                 }
                 else
                 {
                     (Owner as MainWindow).CallExceptionWindow("Книга, либо читатель не выбраны");
                     return;
                 }
-              }
-              catch (Exception exp)
-              {
-                  (Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
-                  return;
-              }
+            }
+            catch (Exception exp)
+            {
+                (Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
+                return;
+            }
 
-              ChooseBookTextBox.Text = "";
-              ChooseReaderTextBox.Text = "";
-              (Owner as MainWindow).CallAcceptWindow("Книга возвращена успешно");
-
+            ChooseBookTextBox.Text = "";
+            ChooseReaderTextBox.Text = "";
+            (Owner as MainWindow).CallAcceptWindow("Книга возвращена успешно");
         }
     }
 }

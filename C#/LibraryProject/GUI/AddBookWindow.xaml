@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="Добавление новой книги" Height="450" Width="800" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid>
-        <Label Content="Введите название книги:" HorizontalAlignment="Left" Margin="33,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.813,0.111" FontSize="20"/>
+        <Label Content="Введите название книги:" HorizontalAlignment="Left" Margin="33,51,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox Name="BookNameTextBox" HorizontalAlignment="Left" Height="29" Margin="349,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" FontSize="16"/>
-        <Button Name="AcceptButton" Content="Добавить книгу" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click"/>
-
+        <Label Content="Введите количество:" HorizontalAlignment="Left" Margin="33,116,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox Name="BookCountTextBox" HorizontalAlignment="Left" Height="29" Margin="349,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" FontSize="16"/>
+        <Button Name="AcceptButton" Content="Добавить книгу" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click" FontSize="16"/>
     </Grid>
 </Window>

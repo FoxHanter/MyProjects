@@ -93,3 +93,9 @@ D:\Git\C#\LibraryProject\GUI\obj\Debug\SelectReader.g.cs
 D:\Git\C#\LibraryProject\GUI\obj\Debug\SelectReader.baml
 D:\Git\C#\LibraryProject\GUI\obj\Debug\SelectBook.g.cs
 D:\Git\C#\LibraryProject\GUI\obj\Debug\SelectBook.baml
+D:\Git\C#\LibraryProject\GUI\obj\Debug\BooksCatalogWindow.g.cs
+D:\Git\C#\LibraryProject\GUI\obj\Debug\BooksCatalogWindow.baml
+D:\Git\C#\LibraryProject\GUI\obj\Debug\ReadersCatalogWindow.g.cs
+D:\Git\C#\LibraryProject\GUI\obj\Debug\ReadersCatalogWindow.baml
+D:\Git\C#\LibraryProject\GUI\obj\Debug\InfoAboutReaderWindow.g.cs
+D:\Git\C#\LibraryProject\GUI\obj\Debug\InfoAboutReaderWindow.baml

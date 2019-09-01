@@ -10,6 +10,14 @@ namespace LibraryFunctional
 {
     public class BookToReader
     {
+        public BookToReader(int bookId, int readerId, DateTime? dateOfIssue, DateTime? returnDate)
+        {
+            BookId = bookId;
+            ReaderId = readerId;
+            DateOfIssue = dateOfIssue;
+            ReturnDate = returnDate;
+        }
+
         [Key]
         [ForeignKey("Book")]
         [Column(Order = 1)]

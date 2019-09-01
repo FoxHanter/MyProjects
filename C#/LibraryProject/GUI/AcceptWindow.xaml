@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-       Title="Поздравляем!" Height="150" Width="250" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+       Title="Поздравляем!" Height="200" Width="250" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid Width="250">
-        <Label Name="Label_Accept" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="214" Height="101">
-            <TextBlock Name="TB_Accept" TextWrapping="Wrap" Text=""/>
+        <Label Name="AcceptLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="225" Height="100">
+            <TextBlock Name="AcceptTextBlock" TextWrapping="Wrap" Text="" FontSize="16"/>
         </Label>
+        <Button Name="AcceptButton" Content="ОК" HorizontalAlignment="Left" Margin="85,124,0,0" VerticalAlignment="Top" Width="80" Click="AcceptButton_Click" FontSize="16"/>
     </Grid>
 </Window>

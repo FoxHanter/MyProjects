@@ -11,7 +11,12 @@ namespace GUI
         {
             InitializeComponent();
 
-            TB_Accept.Text = message;
+            AcceptTextBlock.Text = message;
+        }
+
+        private void AcceptButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

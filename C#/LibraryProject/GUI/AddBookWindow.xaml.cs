@@ -22,17 +22,18 @@ namespace GUI
             try
             {
                 string name = BookNameTextBox.Text;
+                int count = int.Parse(BookCountTextBox.Text);
                 BookNameTextBox.Clear();
-                _books.Create(new Book(name));
+                BookCountTextBox.Clear();
+                _books.Create(new Book(name,count));
             }
             catch (Exception exp)
             {
-                (this.Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
+                (Owner.Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
                 return;
             }
 
-            (this.Owner as MainWindow).CallAcceptWindow("Книга добавлена успешно");
-
+            (Owner.Owner as MainWindow).CallAcceptWindow("Книга добавлена успешно");
         }
     }
 }

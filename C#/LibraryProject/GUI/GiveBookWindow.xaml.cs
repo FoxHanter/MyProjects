@@ -1,11 +1,7 @@
 ﻿using LibraryFunctional;
 using System;
-using System.Data.OleDb;
 using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Input;
 
 namespace GUI
 {
@@ -14,7 +10,8 @@ namespace GUI
     /// </summary>
     public partial class GiveBookWindow : Window
     {
-        Library _library;
+        private Library _library;
+
         public GiveBookWindow(Library library)
         {
             InitializeComponent();
@@ -37,13 +34,8 @@ namespace GUI
                     else
                     {
                         _library.Books.Update(book, -1);
-                        var book1 = new BookToReader();
-                        book1.BookId = book.ID;
-                        book1.ReaderId = reader.ID;
-                        DatabaseQueryMaker maker = new DatabaseQueryMaker();
-                        var con = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LibraryDataBase.mdb;");
-                        con.Open();
-                        maker.VoidQuery($"INSERT INTO BooksToReaders (b_id, r_id, t_in, t_out) VALUES('{book1.BookId}','{book1.ReaderId}','{Din.SelectedDate}','{Dout.SelectedDate}')", con);
+                        var bookToReader = new BookToReader(book.ID, reader.ID, DateOfIssuePicker.SelectedDate, ReturnDatePicker.SelectedDate);
+                        _library.TakenBooks.Create(bookToReader);
                     }
                 else
                 {
@@ -60,7 +52,6 @@ namespace GUI
             ChooseBookTextBox.Text = "";
             ChooseReaderTextBox.Text = "";
             (Owner as MainWindow).CallAcceptWindow("Книга выдана читателю успешно");
-
         }
 
         private void SelectReaderButton_Click(object sender, RoutedEventArgs e)

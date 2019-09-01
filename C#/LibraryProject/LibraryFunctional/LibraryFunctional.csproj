@@ -51,6 +51,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookRepository.cs" />
     <Compile Include="BookToReader.cs" />
+    <Compile Include="BookToReaderRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

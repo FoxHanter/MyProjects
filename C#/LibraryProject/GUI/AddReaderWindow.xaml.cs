@@ -27,12 +27,11 @@ namespace GUI
             }
             catch (Exception exp)
             {
-                (this.Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
+                (Owner.Owner as MainWindow).CallExceptionWindow($"Что-то пошло не так :(\n+{exp.Message}");
                 return;
             }
                
-            (this.Owner as MainWindow).CallAcceptWindow("Читатель зарегистрирован успешно");
-            
+            (Owner.Owner as MainWindow).CallAcceptWindow("Читатель зарегистрирован успешно");           
         }
     }
 }

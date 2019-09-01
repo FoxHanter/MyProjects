@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="SelectBook" Height="450" Width="800">
     <Grid>
-        <StackPanel Margin="144,131,227,22" >
-            <ListBox Name="ChooseReaderListBox" PreviewMouseDown="ChooseReaderListBox_PreviewMouseDown"/>
-        </StackPanel>
+        <ScrollViewer Margin="144,131,227,22" >
+            <ListBox Name="ChooseReaderListBox" PreviewMouseDown="ChooseReaderListBox_PreviewMouseDown" FontSize="16"/>
+        </ScrollViewer>
         <Label  Content="Поиск" HorizontalAlignment="Left" Height="30" Margin="39,50,0,0" VerticalAlignment="Top" Width="71" FontSize="16"/>
         <TextBox Name="tb" HorizontalAlignment="Left" Height="30" Margin="144,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="421" FontSize="16" TextChanged="TextBox_TextChanged"/>
-        <Button Name="b" Content="Выбрать" HorizontalAlignment="Left" Height="30" Margin="591,50,0,0" VerticalAlignment="Top" Width="122" Click="B_Click"/>
+        <Button Name="b" Content="Выбрать" HorizontalAlignment="Left" Height="30" Margin="591,50,0,0" VerticalAlignment="Top" Width="122" Click="B_Click" FontSize="16"/>
         <Label  Content="Все книги" HorizontalAlignment="Left" Height="30" Margin="144,96,0,0" VerticalAlignment="Top" Width="421" FontSize="16"/>
     </Grid>
 </Window>

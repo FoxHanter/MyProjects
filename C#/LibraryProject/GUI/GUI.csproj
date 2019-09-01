@@ -58,8 +58,17 @@
     <Compile Include="AcceptWindow.xaml.cs">
       <DependentUpon>AcceptWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BooksCatalogWindow.xaml.cs">
+      <DependentUpon>BooksCatalogWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionWindow.xaml.cs">
       <DependentUpon>ExceptionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAboutReaderWindow.xaml.cs">
+      <DependentUpon>InfoAboutReaderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReadersCatalogWindow.xaml.cs">
+      <DependentUpon>ReadersCatalogWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SelectBook.xaml.cs">
       <DependentUpon>SelectBook.xaml</DependentUpon>
@@ -82,11 +91,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="BooksCatalogWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExceptionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GiveBookWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoAboutReaderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,6 +128,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ReadersCatalogWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SelectBook.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

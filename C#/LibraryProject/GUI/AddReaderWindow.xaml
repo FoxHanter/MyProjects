@@ -9,7 +9,6 @@
     <Grid>
         <Label Content="Введите имя нового читателя:" HorizontalAlignment="Left" Margin="33,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.813,0.111" FontSize="20"/>
         <TextBox Name="ReaderNameTextBox" HorizontalAlignment="Left" Height="29" Margin="349,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" FontSize="16"/>
-        <Button Name="AcceptButton" Content="Зарегистрировать читателя" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click"/>
-
+        <Button Name="AcceptButton" Content="Зарегистрировать читателя" HorizontalAlignment="Left" Height="50" Margin="33,320,0,0" VerticalAlignment="Top" Width="224" Click="AcceptButton_Click" FontSize="16"/>
     </Grid>
 </Window>

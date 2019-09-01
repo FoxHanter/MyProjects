@@ -14,9 +14,9 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
-            _library = new Library(new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LibraryDataBase.mdb;"), "Books", "Readers");
+            _library = new Library(new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LibraryDataBase.mdb;"), "Books", "Readers","BooksToReaders");
 
-            this.Closing += MainWindow_Closing;
+            Closing += MainWindow_Closing;
         }
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -24,23 +24,22 @@ namespace GUI
             _library.CloseConnection();
         }
 
-        private void NewReaderButton_Click(object sender, RoutedEventArgs e)
+        private void ReaderCatalogButton_Click(object sender, RoutedEventArgs e)
         {
-            var addReaderWindow = new AddReaderWindow(_library.Readers);
-            addReaderWindow.Owner = this;
+            var readerCatalogWindow = new ReadersCatalogWindow(_library);
+            readerCatalogWindow.Owner = this;
 
-            if (addReaderWindow.ShowDialog() == true)
-                addReaderWindow.Show();
+            if (readerCatalogWindow.ShowDialog() == true)
+                readerCatalogWindow.Show();
         }
 
-        private void NewBookButton_Click(object sender, RoutedEventArgs e)
+        private void BookCatalogButton_Click(object sender, RoutedEventArgs e)
         {
+            var bookCatalogWindow = new BooksCatalogWindow(_library.Books);
+            bookCatalogWindow.Owner = this;
 
-            var addBookWindow = new AddBookWindow(_library.Books);
-            addBookWindow.Owner = this;
-
-            if (addBookWindow.ShowDialog() == true)
-                addBookWindow.Show();
+            if (bookCatalogWindow.ShowDialog() == true)
+                bookCatalogWindow.Show();
         }
 
         private void GiveBookButton_Click(object sender, RoutedEventArgs e)
