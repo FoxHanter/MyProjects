@@ -26,6 +26,8 @@ namespace GUI
 
             if (addReaderWindow.ShowDialog() == true)
                 addReaderWindow.Show();
+
+            UpdateCatalog();
         }
 
         private void DeleteReaderButton_Click(object sender, RoutedEventArgs e)
@@ -50,9 +52,11 @@ namespace GUI
                 (Owner as MainWindow).CallExceptionWindow("Сначала выберите читателя, кликнув на его имя");
                 return;
             }
+
+            UpdateCatalog();
         }
 
-        private void UpdateCatalogButton_Click(object sender, RoutedEventArgs e)
+        private void UpdateCatalog()
         {
             ListBoxShowAllItems();
         }
@@ -65,23 +69,15 @@ namespace GUI
                 ReadersCatalogListBox.Items.Add(item);
         }
 
-        private void MoreInfoButton_Click(object sender, RoutedEventArgs e)
+        private void ReadersCatalogListBox_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            if (ReadersCatalogListBox.SelectedItem != null)
-            {
-                Reader reader = _library.Readers.GetAllItems().First(x => x.ToString().Equals(ReadersCatalogListBox.SelectedItem.ToString()));
+            Reader reader = _library.Readers.GetAllItems().First(x => x.ToString().Equals(ReadersCatalogListBox.SelectedItem.ToString()));
 
-                var infoAboutReaderWindow = new InfoAboutReaderWindow(reader,_library.Books);
-                infoAboutReaderWindow.Owner = this;
+            var infoAboutReaderWindow = new InfoAboutReaderWindow(reader, _library.Books);
+            infoAboutReaderWindow.Owner = this;
 
-                if (infoAboutReaderWindow.ShowDialog() == true)
-                    infoAboutReaderWindow.Show();
-            }
-            else
-            {
-                (Owner as MainWindow).CallExceptionWindow("Сначала выберите читателя, кликнув на его имя");
-                return;
-            }
+            if (infoAboutReaderWindow.ShowDialog() == true)
+                infoAboutReaderWindow.Show();
         }
     }
 }

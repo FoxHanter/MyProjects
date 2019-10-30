@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="Каталог книг" Height="450" Width="800">
     <Grid>
-        <Label Content="Список всех книг" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <ScrollViewer Margin="10,50,382,10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Список всех книг" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <ScrollViewer Margin="10,50,382,10" Grid.ColumnSpan="2" >
             <ListBox Name="BooksCatalogListBox" FontSize="16"/>
         </ScrollViewer>
-        <Button Name="AddBookButton" Content="Добавить книгу" HorizontalAlignment="Left" Height="30" Margin="520,50,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="AddBookButton_Click"/>
-        <Button Name="DeleteBookButton" Content="Удалить книгу" HorizontalAlignment="Left" Height="30" Margin="520,100,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="DeleteBookButton_Click"/>
-        <Button Name="UpdateCatalogButton" Content="Обновить список" HorizontalAlignment="Left" Height="30" Margin="520,150,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="UpdateCatalogButton_Click"/>
+        <Button Name="AddBookButton" Content="Добавить книгу" HorizontalAlignment="Left" Height="30" Margin="490,50,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="AddBookButton_Click" Grid.Column="1"/>
+        <Button Name="DeleteBookButton" Content="Удалить книгу" HorizontalAlignment="Left" Height="30" Margin="490,100,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="DeleteBookButton_Click" Grid.Column="1"/>
     </Grid>
 </Window>

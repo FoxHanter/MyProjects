@@ -9,11 +9,9 @@
     <Grid>
         <Label Content="Список всех читателей" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ScrollViewer Margin="10,50,382,10" >
-            <ListBox Name="ReadersCatalogListBox" FontSize="16"/>
+            <ListBox Name="ReadersCatalogListBox" FontSize="16" MouseDoubleClick="ReadersCatalogListBox_MouseDoubleClick"/>
         </ScrollViewer>
         <Button Name="AddReaderButton" Content="Добавить читателя" HorizontalAlignment="Left" Height="30" Margin="520,50,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="AddReaderButton_Click"/>
         <Button Name="DeleteReaderButton" Content="Удалить читателя" HorizontalAlignment="Left" Height="30" Margin="520,100,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="DeleteReaderButton_Click"/>
-        <Button Name="UpdateCatalogButton" Content="Обновить список" HorizontalAlignment="Left" Height="30" Margin="520,150,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="UpdateCatalogButton_Click"/>
-        <Button Name="MoreInfoButton" Content="Подробнее" HorizontalAlignment="Left" Height="30" Margin="520,200,0,0" VerticalAlignment="Top" Width="169" FontSize="16" Click="MoreInfoButton_Click"/>
     </Grid>
 </Window>

@@ -26,6 +26,8 @@ namespace GUI
 
             if (addBookWindow.ShowDialog() == true)
                 addBookWindow.Show();
+
+            UpdateCatalog();
         }
 
         private void DeleteBookButton_Click(object sender, RoutedEventArgs e)
@@ -50,9 +52,11 @@ namespace GUI
                 (Owner as MainWindow).CallExceptionWindow("Сначала выберите книгу, кликнув на ее название");
                 return;
             }
+
+            UpdateCatalog();
         }
 
-        private void UpdateCatalogButton_Click(object sender, RoutedEventArgs e)
+        private void UpdateCatalog()
         {
             ListBoxShowAllItems();
         }
