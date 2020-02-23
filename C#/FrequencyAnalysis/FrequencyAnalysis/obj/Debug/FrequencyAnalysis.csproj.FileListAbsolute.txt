@@ -1,0 +1,30 @@
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe.config
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.pdb
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csprojResolveAssemblyReference.cache
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Form1.resources
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Properties.Resources.resources
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csproj.GenerateResource.Cache
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.exe
+h:\documents\visual studio 2013\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.pdb
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe.config
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.pdb
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csprojAssemblyReference.cache
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Form1.resources
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Properties.Resources.resources
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csproj.GenerateResource.cache
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.exe
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.pdb
+D:\Projects\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\openFile.png
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\openFile.png
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe.config
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.exe
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\bin\Debug\FrequencyAnalysis.pdb
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csprojAssemblyReference.cache
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Form1.resources
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.Properties.Resources.resources
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csproj.GenerateResource.cache
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.csproj.CoreCompileInputs.cache
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.exe
+C:\Users\Kostya\Desktop\FrequencyAnalysis\FrequencyAnalysis\obj\Debug\FrequencyAnalysis.pdb
