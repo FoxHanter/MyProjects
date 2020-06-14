@@ -1,0 +1,9 @@
+D:\курсач\CryptographyLibrary\SquareCipher\bin\Release\SquareCipher.dll
+D:\курсач\CryptographyLibrary\SquareCipher\bin\Release\SquareCipher.pdb
+D:\курсач\CryptographyLibrary\SquareCipher\bin\Release\CryptographyLibrary.dll
+D:\курсач\CryptographyLibrary\SquareCipher\bin\Release\CryptographyLibrary.pdb
+D:\курсач\CryptographyLibrary\SquareCipher\obj\Release\SquareCipher.csprojAssemblyReference.cache
+D:\курсач\CryptographyLibrary\SquareCipher\obj\Release\SquareCipher.csproj.CoreCompileInputs.cache
+D:\курсач\CryptographyLibrary\SquareCipher\obj\Release\SquareCipher.csproj.CopyComplete
+D:\курсач\CryptographyLibrary\SquareCipher\obj\Release\SquareCipher.dll
+D:\курсач\CryptographyLibrary\SquareCipher\obj\Release\SquareCipher.pdb

@@ -1,0 +1,9 @@
+D:\курсач\CryptographyLibrary\AnubisCipher\bin\Release\AnubisCipher.dll
+D:\курсач\CryptographyLibrary\AnubisCipher\bin\Release\AnubisCipher.pdb
+D:\курсач\CryptographyLibrary\AnubisCipher\bin\Release\CryptographyLibrary.dll
+D:\курсач\CryptographyLibrary\AnubisCipher\bin\Release\CryptographyLibrary.pdb
+D:\курсач\CryptographyLibrary\AnubisCipher\obj\Release\AnubisCipher.csprojAssemblyReference.cache
+D:\курсач\CryptographyLibrary\AnubisCipher\obj\Release\AnubisCipher.csproj.CoreCompileInputs.cache
+D:\курсач\CryptographyLibrary\AnubisCipher\obj\Release\AnubisCipher.csproj.CopyComplete
+D:\курсач\CryptographyLibrary\AnubisCipher\obj\Release\AnubisCipher.dll
+D:\курсач\CryptographyLibrary\AnubisCipher\obj\Release\AnubisCipher.pdb

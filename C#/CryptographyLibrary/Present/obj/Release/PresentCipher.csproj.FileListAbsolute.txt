@@ -1,0 +1,9 @@
+D:\курсач\CryptographyLibrary\Present\bin\Release\Present.dll
+D:\курсач\CryptographyLibrary\Present\bin\Release\Present.pdb
+D:\курсач\CryptographyLibrary\Present\bin\Release\CryptographyLibrary.dll
+D:\курсач\CryptographyLibrary\Present\bin\Release\CryptographyLibrary.pdb
+D:\курсач\CryptographyLibrary\Present\obj\Release\PresentCipher.csprojAssemblyReference.cache
+D:\курсач\CryptographyLibrary\Present\obj\Release\PresentCipher.csproj.CoreCompileInputs.cache
+D:\курсач\CryptographyLibrary\Present\obj\Release\PresentCipher.csproj.CopyComplete
+D:\курсач\CryptographyLibrary\Present\obj\Release\Present.dll
+D:\курсач\CryptographyLibrary\Present\obj\Release\Present.pdb

@@ -1,0 +1,17 @@
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.dll
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.pdb
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.csprojAssemblyReference.cache
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.dll
+C:\Users\Kostya\Desktop\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.pdb
+D:\мусор\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.dll
+D:\мусор\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.pdb
+D:\мусор\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.csprojAssemblyReference.cache
+D:\мусор\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.csproj.CoreCompileInputs.cache
+D:\мусор\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.dll
+D:\мусор\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.pdb
+D:\курсач\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.dll
+D:\курсач\CryptographyLibrary\CryptographyLibrary\bin\Release\CryptographyLibrary.pdb
+D:\курсач\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.csproj.CoreCompileInputs.cache
+D:\курсач\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.dll
+D:\курсач\CryptographyLibrary\CryptographyLibrary\obj\Release\CryptographyLibrary.pdb
